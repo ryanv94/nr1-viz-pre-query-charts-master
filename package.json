@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "name": "pre-query-charts",
+    "version": "1.0.16",
+    "scripts": {
+        "start": "nr1 nerdpack:serve",
+        "test": "exit 0"
+    },
+    "nr1": {
+        "uuid": "5161afdb-644f-4adf-9ed7-de812b1495bd"
+    },
+    "dependencies": {
+        "@newrelic/nr1-community": "^1.2.0",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.33",
+        "prop-types": "^15.6.2",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "recharts": "^2.0.9"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "not ie < 11",
+        "not dead"
+    ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaType": "VISUALIZATION",
+  "id": "pre-query-chart",
+  "displayName": "Pre-Query Charts",
+  "description": "",
+  "configuration": [
+    {
+      "name": "preQueryAccountId",
+      "title": "Pre query account ID",
+      "description": "The account ID for the pre-query",
+      "type": "account-id"
+    },
+    {
+      "name": "preQuery",
+      "title": "Pre query",
+      "description": "The query that chooses the values we want",
+      "type": "nrql"
+    },
+    {
+      "name": "preQueryIgnoreTimePicker",
+      "title": "Ignore time picker",
+      "description": "Check if the timepicker should be ignored for pre query",
+      "type": "boolean"
+    },
+    {
+      "name": "maxColumns",
+      "title": "Max columns",
+      "description": "The maximum amount of charts that can appear in a row",
+      "type": "number"
+    },
+    {
+      "name": "nrqlQueries",
+      "title": "NRQL Queries",
+      "type": "collection",
+      "items": [
+        {
+          "name": "title",
+          "title": "Chart title",
+          "description": "The title for this chart",
+          "type": "string"
+        },
+        {
+          "name": "accountId",
+          "title": "Chart query account ID",
+          "description": "The account ID for the Chart-query",
+          "type": "account-id"
+        },
+        {
+          "name": "query",
+          "title": "Chart query",
+          "description": "The query that is used for the chart",
+          "type": "nrql"
+        },
+        {
+          "name": "filterAttr",
+          "title": "Filter attribute",
+          "description": "The attribute that the where clause will target if using prequery",
+          "type": "string"
+        },
+        {
+          "name": "ignoreTimePicker",
+          "title": "Ignore time picker",
+          "description": "Check if the time picker should always be ignored for query",
+          "type": "boolean"
+        },
+        {
+          "name": "defaultSince",
+          "title": "Default since",
+          "description": "The default since clause to use when no date picker value chosen",
+          "type": "string"
+        },
+        {
+          "name": "sinceDays",
+          "title": "Since days",
+          "description": "The number of days your query should look back",
+          "type": "number"
+        },
+        {
+          "name": "untilDays",
+          "title": "Until days",
+          "description": "Until what point should your query look to?",
+          "type": "number"
+        },
+        {
+          "name": "timezone",
+          "title": "Time zone",
+          "description": "Enforce time zone, UTC if unset",
+          "type": "string"
+        },
+        {
+          "name": "chartType",
+          "title": "Chart type",
+          "description": "Type of chart to render",
+          "type": "enum",
+          "items": [
+            {
+              "title": "Line chart",
+              "value": "line"
+            },
+            {
+              "title": "Sparkline chart",
+              "value": "sparkline"
+            },
+            {
+              "title": "Area Chart",
+              "value": "area"
+            },
+            {
+              "title": "Billboard Chart",
+              "value": "billboard"
+            },
+            {
+              "title": "Table Chart",
+              "value": "table"
+            },
+            {
+              "title": "Bar Chart",
+              "value": "bar"
+            },
+            {
+              "title": "Pie Chart",
+              "value": "pie"
+            },
+            {
+              "title": "Funnel Chart",
+              "value": "funnel"
+            },
+            {
+              "title": "JSON Chart",
+              "value": "json"
+            },
+            {
+              "title": "Histogram Chart",
+              "value": "histogram"
+            },
+            {
+              "title": "Stacked Bar Chart",
+              "value": "stackedbar"
+            },
+            {
+              "title": "Heatmap Chart",
+              "value": "heatmap"
+            }
+          ]
+        }
+      ]
+    }
+
+   
+    
+  ]
+}
